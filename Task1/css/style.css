@@ -1,0 +1,203 @@
+* {
+	margin: 0;
+	padding:0;
+}
+html, body {
+	height: 100%;
+}
+body {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Helvetica, sans-serif;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.header {
+	height: 150px;
+	background-color: #111a29;
+	background-image: url(../images/header-bg.jpg);
+	background-position: 85%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	color: #ffffff;
+	position: relative;
+	flex: 2 0 auto;
+}
+h1, h2 {
+	font-weight: lighter;
+	text-transform: capitalize;
+}
+.header p {
+	font-size: 10pt;
+    text-transform: uppercase;
+    color: #a1b4be;
+}
+.headerText {
+	margin-left: 100px;
+    position: absolute;
+    top: 20%;
+    line-height: 30px;
+}
+.content {
+	flex: 1 0 auto;
+	color: #364654;
+}
+.registrTitle {
+	height: 40px;
+    background-color: #bfd4de;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 1% 0% 0% 13%;
+}
+.registrForm {
+	background-color: #e3f1f9;
+	padding-bottom: 4%;
+}
+.regForm {
+	background-color: #ffffff;
+    width: 800px;
+    margin: 0 auto;
+    padding: 25px 60px 30px 30px;
+    box-sizing: border-box;
+}
+.regForm p {
+	font-style: italic;
+	font-size: 11pt;
+	margin-bottom: 20px;
+}
+label {
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: 11pt;
+}
+label.required:after {
+    color: #000000;
+    content: " *";
+}
+input, select {
+	height: 25px;
+	width: 190px;
+}
+.formOrder div:nth-child(even) {
+	float: right;
+    width: 50%;
+    margin: 10px 0px;
+    text-align: right;
+}
+.formOrder div:nth-child(odd) {
+	float: left;
+    width: 50%;
+    margin: 9px 0px;
+    text-align: right;
+}
+.button {
+	background-color: #364654;
+	width: 111px;
+    height: 36px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.footer {
+	flex: 0 0 auto;
+	background-color: #364654;
+	height: 40px;
+	width: inherit;
+}
+.copy {
+    font-size: 9pt;
+    color: #e5e5e5;
+    line-height: 40px;
+    margin-left: 100px;
+}
+.footerLinks a {
+	font-size: 9pt;
+    color: #e5e5e5;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.footerLinks {
+	line-height: 40px;
+    float: right;
+    margin-right: 100px;
+}
+@media screen and (max-width: 480px) {
+	body {
+		max-width: 480px;
+	}
+	.header {
+		background-position: 90%;
+	}
+	.regForm {
+		max-width: 445px;
+	}
+	.registrTitle {
+	    height: 28px;
+	    font-size: 11pt;
+	}
+	.headerText {
+		max-width: 290px;
+		margin-left: 4%;
+	    top: 13%;
+	}
+	h1 {
+    font-size: 19px;
+	}
+	h2 {
+    font-size: 17px;
+	}
+	.formOrder div:nth-child(even) {
+		float: none;
+	    width: 100%;
+	    margin: 10px 0px;
+	    text-align: right;
+	}
+	.formOrder div:nth-child(odd) {
+		float: none;
+	    width: 100%;
+	    margin: 10px 0px;
+	    text-align: right;
+	}
+	.copy {
+		margin-left: 50px;
+	}
+}
+@media screen and (max-width: 360px) {
+	body {
+		max-width: 360px;
+	}
+	.copy {
+	    margin-left: 5%;
+	}
+	.header {
+		height: 110px;
+		background-image: none;
+	}
+	.header p {
+		font-size: 9pt;
+	}
+	.headerText {
+		line-height: 22px;
+	}
+	.footerLinks {
+		margin-right: 5%;
+	}
+	input, select {
+		width: 150px;
+	}
+	label {
+		margin-right: 3%;
+		font-size: 10pt;
+	}
+	.regForm {
+		max-width: 360px;
+		padding: 4% 10% 5% 5%;
+	}
+}
