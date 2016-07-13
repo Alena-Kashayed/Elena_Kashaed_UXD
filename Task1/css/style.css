@@ -6,7 +6,7 @@ html, body {
 	height: 100%;
 }
 body {
-	width: 1000px;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	font-family: Helvetica, sans-serif;
@@ -20,7 +20,7 @@ body {
 	height: 150px;
 	background-color: #111a29;
 	background-image: url(../images/header-bg.jpg);
-	background-position: 85%;
+	background-position: 83%;
 	background-size: contain;
 	background-repeat: no-repeat;
 	color: #ffffff;
@@ -37,7 +37,7 @@ h1, h2 {
     color: #a1b4be;
 }
 .headerText {
-	margin-left: 100px;
+	margin-left: 13%;
     position: absolute;
     top: 20%;
     line-height: 30px;
@@ -59,7 +59,7 @@ h1, h2 {
 }
 .regForm {
 	background-color: #ffffff;
-    width: 800px;
+	width: 1000px;
     margin: 0 auto;
     padding: 25px 60px 30px 30px;
     box-sizing: border-box;
@@ -115,7 +115,7 @@ input, select {
     font-size: 9pt;
     color: #e5e5e5;
     line-height: 40px;
-    margin-left: 100px;
+    margin-left: 13%;
 }
 .footerLinks a {
 	font-size: 9pt;
@@ -126,7 +126,7 @@ input, select {
 .footerLinks {
 	line-height: 40px;
     float: right;
-    margin-right: 100px;
+    margin-right: 13%;
 }
 @media screen and (max-width: 480px) {
 	body {
